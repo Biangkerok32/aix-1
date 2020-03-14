@@ -10,16 +10,16 @@ apt-get update && apt-get install -y \
 git clone $1
 git submodule update --init
 
-cp -r src/** appinventor-extensions/appinventor/components/src
+cp -r src/** appinventor/components/src
 
-cd appinventor-extensions/appinventor/
+cd appinventor/
 ant clean
 ant MakeAuthKey
 ant extensions -Dproguard=1
 
 cd ../..
 
-cd appinventor-extensions/appinventor/components/build/extensions
+cd appinventor/components/build/extensions
 file=$(dir)
 echo ::set-output name=file::$file
 
