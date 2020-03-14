@@ -14,7 +14,3 @@ The git URL of App Inventor sources repository to compile your extension. Defaul
 ### `file`
 
 The output AIX file name. So you can use it directly for creating release actions.
-
-## How to use it?
-
-You can check [Wiki](https://github.com/ysfchn/appinventor-aix-action/wiki) for detailed usage.
